@@ -1,0 +1,22 @@
+.card-body-btn {
+    
+    display: flex;
+    align-items: center;
+}
+
+.card-body-btn .btn {
+    padding: 0.7em 1.5em;
+    border: 2px solid #007bff;
+    background: none;
+    color: #007bff;
+    border-radius: 0%;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-body-btn .btn:hover {
+     background: #007bff;
+    color: #fff;
+    
+}
