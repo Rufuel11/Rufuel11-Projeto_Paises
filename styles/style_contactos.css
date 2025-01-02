@@ -1,22 +1,84 @@
-.card-body-btn {
+*
+{
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.header {
+    margin-bottom: 4rem; 
+}
+
+.container {
+    max-width: 1050px; 
+    margin: 0 auto; 
+}
+
+.card {
+    max-width: 300px; 
+    margin: 0 auto; 
+}
+
+.card-title{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
     
+}
+
+.card-text{
+    text-align: center;
+}
+
+.card-body-btn {
     display: flex;
+    justify-content: center; 
     align-items: center;
+    text-align: center;
 }
 
 .card-body-btn .btn {
     padding: 0.7em 1.5em;
     border: 2px solid #007bff;
+    align-items: center;
     background: none;
     color: #007bff;
     border-radius: 0%;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .card-body-btn .btn:hover {
-     background: #007bff;
+    background: #007bff;
     color: #fff;
-    
 }
+
+footer {
+    color: #000000;
+    background-color: #f3f3f3; 
+}
+
+.btn-social {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #007bff;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-social:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
