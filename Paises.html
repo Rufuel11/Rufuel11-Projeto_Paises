@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style_paises.css">
+    <title>Paises</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="imagem/logo.png" alt="Logo" class="logo-img">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="Pagina_inicial.html">Home</a></li>
+                <li><a href="Paises.html">Paises</a></li>
+                <li><a href="#contato">Favoritos</a></li>
+                <li><a href="#contato">sobre</a></li>
+            </ul>
+            <div class="contact-btn">
+                <a href="#" class="btn">Contactos</a>
+            </div>
+        </nav>
+      </header>
+
+    <!-- Filtros e Países -->
+    <div class="main-container">
+        <!-- Filtros -->
+        <aside class="filters">
+            <h2>Filtros</h2>
+            <div class="filter-section">
+                <label for="region">Região</label>
+                <select id="region">
+                    <option value="all">Todos</option>
+                    <option value="Africa">África</option>
+                    <option value="Americas">Américas</option>
+                    <option value="Asia">Ásia</option>
+                    <option value="Europe">Europa</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- Lista de Países -->
+        <section class="countries">
+            <div class="countries-grid" id="countries-grid">
+                <!-- Os países serão carregados dinamicamente -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Direitos de Autor, Todos os direitos reservados</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>      
+    <script src="paises.js" defer></script>
+</body>
+</html>
