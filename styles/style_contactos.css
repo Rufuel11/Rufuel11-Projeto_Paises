@@ -7,54 +7,267 @@
   font-size: 16px;
 }
 
-.header {
-    margin-bottom: 4rem; 
+
+#zonaPublicidade{
+    width: 140px;
+    position: absolute;
+    top: 0px;
+    right: -150px;
 }
 
-.container {
-    max-width: 1050px; 
-    margin: 0 auto; 
+body > header{
+    position: relative;
+    background-color: white;
+    height: 100px;
+    margin: 0px;
+    padding: 10px, 0, 0;
+}
+#zonaFotografia{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 30px;
+    background-image: url('../img/bilhetes_pipocas_oculos_3d_v3.jpg');
+    border-radius: 60px;
+    box-shadow: 0 0 10px rgb(234, 234, 234);
+}
+#zonaLogotipo, #zonaTitulos{
+    height: 90px;
+    float: left;
+}
+#zonaLogotipo{
+    width: 134px;
+    margin-left: 30px;
 }
 
-.card {
-    max-width: 300px; 
-    margin: 0 auto; 
+#zonaLogotipo img{
+    height: 70px;
+    margin-top: 7px;
 }
-
-.card-title{
+#zonaTitulos{
+    margin-left: 10px;
+    width: calc(100%-344px);
     text-align: center;
-    font-size: 26px;
+    letter-spacing: 2px;
+}
+#zonaTitulos h1{
+    margin: 0px;
+    font-size: 40pt;
+    color: #9c4b1c;
+}
+#zonaTitulos h1::first-letter{
+    color: black;
+}
+#zonaTitulos h3{
+    margin: 0px;
+}
+#menuPrincipal, #paginacao{
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    min-height: 48px;
+    border-bottom: 3px solid #9c4b1c;
+    border-top: 3px solid #9c4b1c;
+}
+#menuPrincipal ul, #paginacao ul{
+    padding: 0px;
+    margin: 0px;
+}
+nav li{
+    display: inline-block; 
+    background-color: #ffffff; 
+    height: 30px; 
+    margin: 8px 4px; 
+    padding: 0 10px; 
+    line-height: 30px; 
+    vertical-align: middle; 
+}
+#menuPrincipal .login{
+    float: right;
+}
+#paginacao{
+    text-align: center;
+}
+nav li a {
+    color: #9C4B1C;        
+    text-decoration: none;  
+}
+nav li.itemSelecionado, li.itemSelecionado a, 
+nav li:hover, nav li a:hover, nav li:hover a{
+    background-color: #9C4B1C;
+    color: white;           
+}
+
+nav li.itemDesativado{
+    background-color: lightgray;
+    color:darkgray;
+}
+
+#zonaConteudo{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 11pt;
+}
+#zonaConteudo h2{
+    display: inline-block;
+    margin: 0px 10px;
+    color: black;
+    font-size: 20pt;
+    letter-spacing: 3pt;
+    text-align: left;
+    border-bottom: 2px dotted #9c4b1c;
+}
+#zonaConteudo h2::first-letter{
+    font-size: calc(20pt * 1.5);
+}
+#zonaConteudo table {
+    width: 96%;
+    border: 1px solid black;
+    margin: 20px 2%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#zonaConteudo table td, 
+#zonaConteudo table th{
+    border-left: 1px solid black;
+}
+#zonaConteudo tbody tr{
+    border-bottom: 1px dashed #9c4b1c;
+}
+
+#zonaConteudo tbody tr:nth-child(4n){
+    border-bottom: 1px solid black;
+}
+#zonaConteudo thead{
+    border-bottom: 3px double black;
+}
+#gridListFilmes tr:hover{
+    background-color: #939393;
+    color: white;
+}
+#ultimacoluna{
+    width: 30px;
+    padding: 0%;
+}
+#gridListFilmes img{
+    height: 28px;
+    width: 28px;
+    margin-top: 2px;
+}
+form{
+    border-bottom: 3px solid #9c4b1c;
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+form fieldset{
+    margin: 0px 2% 1% 2%;
+    padding: 1%;
+    border: 1px solid #9c4b1c; 
+    display: block;
+}
+form legend{
     font-weight: bold;
+    font-size: 12pt;
+    letter-spacing: 3px;
+}
+form label{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 11pt;
+    height: 24px;
+    vertical-align: middle;
+    margin: 0px 2px;
+    padding: 2px 5px;
+}
+#grpGeral label, #grpAtores label{
+    width: 130px;
+    text-align: right;
+}
+#grpIdioma label, #grpGenero label{
+    width: calc(100% - 75px);   
+}
+#grpGeral input, #grpAtores input{
+    display: inline-block;
+    height: 24px;
+    vertical-align: middle;
+    margin: 1px 2px;
+    padding: 2px 5px;
+    border: 1px solid black;
+    width: calc(100% - 180px);
+    background-color: white;
+}
+#conjuntoField small input{
+    width: 100px;
+}
+textarea{
+    height: 100px;
+    width: 98%;
+    resize: none;
+    margin-left: 1%;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#grpGenero input, #grpIdioma input{
+    margin-left: 10px;
+    width: 20px;
+}
+#grpGeral, #grpAtores{
+    float: left;
+    width: 60%;
+}
+#grpIdioma{
+    margin-bottom: 70px;
+}
+#grpBotoes{
+    text-align: center;
+}
+
+@media (max-width:1139px){
+    #zonaPublicidade{
+        display: none;
+    }
+}
+
+@media (max-width:999px){
+    body{
+        width: 95%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width:600px){
+    #zonaTitulos{
+        display: none;
+    }
+
+    #menuPrincipal ul{
+        text-align: center;
+    }
+
+    #menuPrincipal li{
+        display: block;
+        float: none;
+    }
+
+    #gridListFilmes td:nth-child(3), #gridListFilmes th:nth-child(3),#gridListFilmes td:nth-child(5), #gridListFilmes th:nth-child(5){
+        display: none;
+    }
+
+    #grpAtores, #grpGeral{
+        width: calc(94% - 2px);
+    }  
     
+    #grpGenero, #grpIdioma{
+        width: calc(100% - 100px)/2;
+    }  
+
 }
 
-.card-text{
-    text-align: center;
-}
 
-.card-body-btn {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-}
-
-.card-body-btn .btn {
-    padding: 0.7em 1.5em;
-    border: 2px solid #007bff;
-    align-items: center;
-    background: none;
-    color: #007bff;
-    border-radius: 0%;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.card-body-btn .btn:hover {
-    background: #007bff;
-    color: #fff;
-}
 
 footer {
     color: #000000;

@@ -31,50 +31,83 @@
         </nav>
     </header>
 
-    <!--cards-->
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="imagem/user.jpg" class="card-img-top" alt="Pedro">
-                    <div class="card-body">
-                        <h5 class="card-title">Pedro Xavier</h5>
-                        <p class="card-text">Estudante</p>
-                        <div class="card-body-btn">
-                            <a href="Users/Pedro.html" class="btn">Mais informações ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="imagem/user.jpg" class="card-img-top" alt="Luis">
-                    <div class="card-body">
-                        <h5 class="card-title">Luís Pombo</h5>
-                        <p class="card-text">Estudante</p>
-                        <div class="card-body-btn">
-                            <a href="Users/Luis.html" class="btn">Mais informações ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="imagem/user.jpg" class="card-img-top" alt="Rafael">
-                    <div class="card-body">
-                        <h5 class="card-title">Rafael Campos</h5>
-                        <p class="card-text">Estudante</p>
-                        <div class="card-body-btn">
-                            <a href="Users/Rafael.html" class="btn">Mais informações ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
 
 
-
+    <section id="zonaConteudo">
+        <header>
+            <h2>Ficha Técnica</h2>
+        </header>
+        <form action="#" method="POST" id="formDetalheElemento" class="formFicha">
+            <fieldset id="grpGeral">
+                <legend>Geral</legend>
+                <div class="conjuntoField small">
+                    <label for="campoAno">Ano</label>
+                    <input type="text" name="ano" id="campoAno" value="2012">
+                </div>
+                <div class="conjuntoField">
+                    <label for="campoTitle">Titulo</label>
+                    <input type="text" name="title" id="campoTitle" value="The Avengers">
+                </div>
+                <div class="conjuntoField">
+                    <label for="campoPais">País</label>
+                    <input type="text" name="pais" id="campoPais" value="United States">
+                </div>
+                <div class="conjuntoField">
+                    <label for="campoDiretor">Director</label>
+                    <input type="text" name="diretor" id="campoDiretor" value="Joss Whedon">
+                </div>
+                <div class="conjuntoField">
+                    <label for="campoEscritor">Escritor</label>
+                    <input type="text" name="escritor" id="campoEscritor" value="Joss Whedon">
+                </div>
+            </fieldset>
+            <fieldset id="grpAtores">
+                <legend>Atores</legend>
+                <div class="conjuntoField">
+                    <label for="campoAtor1">Ator1</label>
+                    <input type="text" name="ator1" id="campoAtor1" value="Robert Downey Jr.">
+                </div>
+                <div class="conjuntoField">
+                    <label for="campoAtor2">Ator 2</label>
+                    <input type="text" name="ator2" id="campoAtor2" value="Chris Evans">
+                </div>
+                <div class="conjuntoField">
+                    <label for="campoAtor3">Ator 3</label>
+                    <input type="text" name="ator3" id="campoAtor3" value="Scarlett Johansson">
+                </div>
+            </fieldset>
+            <fieldset id="grpGenero">
+                <legend>Genéro</legend>
+                <input type="checkbox" id="campoGenero1" name="genero" checked>
+                <label for="campoGenero1">Ação</label>
+                <input type="checkbox" id="campoGenero2" name="genero">
+                <label for="campoGenero2">Terror</label>
+                <input type="checkbox" id="campoGenero3" name="genero" checked>
+                <label for="campoGenero3">Ficção Científica</label>
+            </fieldset>
+            <fieldset id="grpIdioma">
+                <legend>Idioma</legend>
+                <input type="radio" id="campoIdioma1" name="idioma" value="EN" checked>
+                <label for="campoIdioma1">Inglês</label>
+                <input type="radio" id="campoIdioma2" name="idioma" value="FR">
+                <label for="campoIdioma2">Francês</label>
+                <input type="radio" id="campoIdioma3" name="idioma" value="PT">
+                <label for="campoIdioma3">Português</label>
+                <input type="radio" id="campoIdioma4" name="idioma" value="ES">
+                <label for="campoIdioma4">Espanhol</label>
+            </fieldset>
+            <fieldset id="grpDescricao">
+                <legend>Descrição</legend>
+                <textarea
+                    name="descricao">Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity</textarea>
+            </fieldset>
+            <fieldset id="grpBotoes">
+                <input type="reset" value="Cancelar">
+                <input type="submit" value="Guardar">
+            </fieldset>
+        </form>
+    </section>
 
     <footer class="py-3 mt-4">
         <div class="logo text-center mb-3">

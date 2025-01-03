@@ -1,89 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Pagina Inicial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  
+  <title>Pagina Inicial</title>
 </head>
-<body >
-    <header class="header">
-        <div class="logo">
-            <img src="imagem/logo.png" alt="Logo" class="logo-img">
-        </div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="Pagina_inicial.html">Home</a></li>
-                <li><a href="Paises.html">Paises</a></li>
-                <li><a href="#contato">Favoritos</a></li>
-                <li><a href="#contato">Loja</a></li>
-            </ul>
-            <div class="contact-btn">
-                <a href="contactos.html" class="btn">Contactos</a>
-            </div>
-        </nav>
-      </header>
 
-        <div class="banner-slider">
-          <div class="slides">
-            <!-- Slide 1 -->
-            <div class="slide active">
-              <div class="content">
-                <h1>Descobre o Japão</h1>
-                <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.</p>
-                <p> seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
-                <br>
-                <br>
-                <button class="btn">Explorar</button>
-              </div>
-              <div class="image">
-                <img src="imagem/japao.png" alt="Templo Japonês">
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide">
-              <div class="content">
-                <h1>Explora a Europa</h1>
-                <br>
-                <p>Descobre a vibrante Grande Barreira de Coral, a famosa Ópera de Sydney e o vasto Outback.</p>
-                <p></p>
-                <p>Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
-                <br>
-                <br>
-                <button class="btn">Explorar</button>
-              </div>
-              <div class="image">
-                <img src="imagem/australia.png" alt="Opera House">
-              </div>
-            </div>
-          </div>
-          <!-- Botões de navegação -->
-          <button class="prev" onclick="prevSlide()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#696969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button class="next" onclick="nextSlide()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#696969" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
-          <!-- Indicadores -->
-          <div class="indicators">
-              <span class="dot active" onclick="goToSlide(0)"></span>
-              <span class="dot" onclick="goToSlide(1)"></span>
-          </div> 
-        </div>
-          
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="imagem/logo.png" alt="Logo" class="logo-img">
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="Pagina_inicial.html">Home</a></li>
+        <li><a href="Paises.html">Paises</a></li>
+        <li><a href="#contato">Favoritos</a></li>
+        <li><a href="#contato">Loja</a></li>
+      </ul>
+      <div class="contact-btn">
+        <a href="contactos.html" class="btn">Contactos</a>
+      </div>
+    </nav>
+  </header>
 
-          <div class="choose-country">
-            <h1>Escolha o País</h1>
-            <p>
-                Escolha um destino para explorar a sua singularidade, cultura e atrações. Descubra os lugares mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.
-            </p>
+  <div class="banner-slider">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="content">
+          <h1>Descobre o Japão</h1>
+          <p>Faz uma viagem pelos destinos mais deslumbrantes do mundo. Das ruas vibrantes de Nova Iorque às antigas
+            ruínas de Roma, cada imagem revela um lugar à espera de ser explorado.</p>
+          <p> seja para aventura, relaxamento ou descoberta, encontra o teu próximo destino connosco.</p>
+          <br>
+          <br>
+          <button class="btn">Explorar</button>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>      
-         <script src="home_page.js"></script>
-</body> 
+        <div class="image">
+          <img src="imagem/japao.png" alt="Templo Japonês">
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="content">
+          <h1>Explora a Europa</h1>
+          <br>
+          <p>Descobre a vibrante Grande Barreira de Coral, a famosa Ópera de Sydney e o vasto Outback.</p>
+          <p></p>
+          <p>Austrália oferece uma vida selvagem única, costas ensolaradas e paisagens diversificadas.</p>
+          <br>
+          <br>
+          <button class="btn">Explorar</button>
+        </div>
+        <div class="image">
+          <img src="imagem/australia.png" alt="Opera House">
+        </div>
+      </div>
+    </div>
+    <!-- Botões de navegação -->
+    <button class="prev" onclick="prevSlide()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#696969"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button class="next" onclick="nextSlide()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#696969"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+    <!-- Indicadores -->
+    <div class="indicators">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+    </div>
+  </div>
+
+
+  <div class="choose-country">
+    <h1>Escolha o País</h1>
+    <p>
+      Escolha um destino para explorar a sua singularidade, cultura e atrações. Descubra os lugares mais cativantes do
+      mundo, cada um oferecendo experiências inesquecíveis.
+    </p>
+  </div>
+
+   <!--cards-->
+   <div class="container">
+    <h1>Sobre nós</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="imagem/user.jpg" class="card-img-top" alt="Pedro">
+                <div class="card-body">
+                    <h5 class="card-title">Pedro Xavier</h5>
+                    <p class="card-text">Estudante</p>
+                    <div class="card-body-btn">
+                        <a href="Pedro.html" class="btn">Mais informações ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="imagem/user.jpg" class="card-img-top" alt="Luis">
+                <div class="card-body">
+                    <h5 class="card-title">Luís Pombo</h5>
+                    <p class="card-text">Estudante</p>
+                    <div class="card-body-btn">
+                        <a href="Luis.html" class="btn">Mais informações ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="imagem/user.jpg" class="card-img-top" alt="Rafael">
+                <div class="card-body">
+                    <h5 class="card-title">Rafael Campos</h5>
+                    <p class="card-text">Estudante</p>
+                    <div class="card-body-btn">
+                        <a href="Rafael.html" class="btn">Mais informações ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <footer class="py-3 mt-4">
+    <div class="logo text-center mb-3">
+      <img src="imagem/logo.png" alt="Logo" class="logo-img">
+    </div>
+    <ul class="nav justify-content-center mb-2">
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-dark">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-dark">Paises</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-dark">Favoritos</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-dark">Loja</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-dark">Contactos</a></li>
+    </ul>
+
+    <section class="text-center mb-5">
+      <!-- Redes Sociais -->
+      <a class="btn-social" href="#!" role="button">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="btn-social" href="#!" role="button">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn-social" href="#!" role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn-social" href="#!" role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </section>
+    <hr>
+    <p class="text-center mt-4 mb-1 text-dark">© 2024 Direitos de Autor, Todos os direitos reservados</p>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="home_page.js"></script>
+
+
+
+
+</body>
+
 </html>
